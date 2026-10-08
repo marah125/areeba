@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar{
+            background-color: pink;
+            color:white;
+            padding: 20px 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+            
+        }
+        .navbar h2{
+            font-size: 22px;
+        }
+        .nav-links{
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
+        }
+        .nav-links a{
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .nav-links a:hover{
+            color: bisque;
+        }
+        .student info{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .container{
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+        }
+        .welcome{
+            margin-bottom: 25px;
+        }
+        .welcome h1{
+            margin-bottom: 8px;
+        }
+.stats{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-bottom: 35px;
+}
+.cards{
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.card :hover{
+transform: translateY(-5px);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+            <nav class="navbar">
+<h2>Student Dashboard</h2>
+<div class="nav-links">
+    <a href="#"> Dashboard</a>
+    <a href="#">Courses</a>
+    <a href="#">Assignment</a>
+    <a href="#">Results</a>
+    <a href="Profile"></a>
+</div>
+    <div class="student-info">
+<span>🔔</span>
+<span>AREEBA</span>
+    </div>
+    </nav>
+    </header>
+<div class="notification">
+<span>Notification</span>
+</div>
+</header>
+<main class="container">
+<section class="welcome">
+<h1>Welcome,</h1>
+<p>Here is your acadmic overview</p>
+</section>
+<section class="stats">
+
+    <article class="card">
+
+    </article>
+</section>
+</main>                                                                                                                                                      
+</body>
+</html>

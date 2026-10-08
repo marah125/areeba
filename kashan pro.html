@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input1" placeholder="NUMBER1">
+    <input type="text" id="input2" placeholder="NUMBER2">
+    <br><br>
+    <button onclick="addition()">+</button>
+    <button onclick="substraction()">-</button>
+    <button onclick="multiplication()">*</button>
+    <button onclick="division()">/</button>
+    <h1 id="result"></h1>
+    <script>
+        function addition(){
+            let num1 = +document.getElementById("input1").value;
+            let num2 = +document.getElementById("input2").value;
+            document.getElementById("result").innerHTML =num1 + num2;
+        }
+        function substraction(){
+            let num1 = +document.getElementById("input1").value;
+            let num2 = +document.getElementById("input2").value;
+            document.getElementById("result").innerHTML =num1 - num2;
+        }
+        function multiplication(){
+            let num1 = +document.getElementById("input1").value;
+            let num2 = +document.getElementById("input2").value;
+            document.getElementById("result").innerHTML =num1 * num2;
+        }
+        function division(){
+            let num1 = +document.getElementById("input1").value;
+            let num2 = +document.getElementById("input2").value;
+            document.getElementById("result").innerHTML =num1 / num2;
+            if(num2 ==0){
+                alert("Can't Divide With 0")
+            }
+            else{
+                document.getElementById("result").innerHTML =num1 / num2;
+            }
+        }
+    </script>
+</body>
+</html>
